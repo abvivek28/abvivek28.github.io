@@ -3,60 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto'>
+    <title>Vivek Aditya Bhargava | Systems & AI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Inter:wght@400;600&display=swap">
     <link rel="stylesheet" href="styles_v3.css">
 </head>
 <body>
-    <div class="header">
-        <div class="header_left">
-            <a href="index.html" class="header_title">Vivek Aditya Bhargava</a>    
-        </div>
-        <div class="header_links">
-            <a href="https://www.linkedin.com/in/vivek-aditya-bhargava-4a0558355/" class="links">Linkedin</a>
-            <a href="https://github.com/abvivek28" class="links">GitHub</a>
-            <a href="mailto:abvivek28@gmail.com" class="links">Contact me</a>
-        </div>
-    </div>
-
-    <div class="introduction">
-        <div class="intro_text">
-            <h2 class="intro_heading">Hi, I'm Vivek</h2>
-            <p class="intro_text">I am an Information Science student at BMS College of Engineering, with a passion for software development. I am interested in building efficient, user-friendly applications and exploring the latest technologies.</p>
-            <p class="intro_text">Check out my projects and feel free to connect!</p>
-        </div>
-    </div>
-
-    <div class="services">
-        <h1>My Projects</h1>
-        <div class="project_cards">
-            <div class="project">
-                <h2>Travel Journal App</h2>
-                <p>AI-powered travel journal with personalized recommendations</p>
-            </div>
-            <div class="project">
-                <h2>Sliding Puzzle Game</h2>
-                <p>Classic sliding puzzle game built with Pygame</p>
-            </div>
-            <div class="project">
-                <h2>Warehouse Management Software</h2>
-                <p>Efficient warehouse management using file-based storage using C</p>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">VAB<span class="dot">.</span></a>
+            <div class="nav_links">
+                <a href="https://github.com/abvivek28" target="_blank">GITHUB</a>
+                <a href="https://www.linkedin.com/in/vivek-aditya-bhargava-4a0558355/" target="_blank">LINKEDIN</a>
+                <a href="mailto:abvivek28@gmail.com" class="nav_cta">CONTACT</a>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="quote">
-        <p1>"The only way to do great work is to love what you do."</p1>
-        <p2>~Steve Jobs</p2>
-    </div>
-
-    <div class="sign_up_section">
-        <div class="sign_up_block">
-            <div class="sign_up_text">
-                <p1>If you wish to connect, feel free to reach out!</p1>
+    <main>
+        <header class="hero">
+            <div class="container">
+                <div class="hero_content">
+                    <p class="hero_pre">Information Science Student</p>
+                    <h1>Building <span class="electric_blue">Intelligent</span> Systems</h1>
+                    <p class="hero_desc">Specializing in <strong>Agentic AI</strong> and <strong>Full-Stack Development</strong> at BMS College of Engineering.</p>
+                </div>
+                
+                <div class="discover_btn" onclick="scrollToContent()">
+                    <div class="pulse_ring"></div>
+                    <span class="btn_text">EXPLORE BUILDS</span>
+                    <div class="arrow_down">↓</div>
+                </div>
             </div>
-            <a href="mailto:abvivek28@gmail.com" class="sign_up_section_button">Contact Me</a>
+        </header>
+
+        <section class="skills" id="main-content">
+            <div class="container">
+                <h2 class="section_title">Technical Toolkit</h2>
+                <div class="skill_grid">
+                    <div class="skill_card reveal">
+                        <div class="card_header">01 // Languages</div>
+                        <p>Python, C++, Java, Kotlin, MySQL, JavaScript</p>
+                    </div>
+                    <div class="skill_card reveal">
+                        <div class="card_header">02 // AI & Backend</div>
+                        <p>LangGraph, LlamaIndex, FastAPI, Node.js, Scikit-learn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <h2 class="section_title">Featured Projects</h2>
+                <div class="project_grid">
+                    <div class="project_card reveal">
+                        <span class="tech_tag blue">LangGraph</span>
+                        <h3>OrderGenie</h3>
+                        <p>Autonomous customer support agent using cyclical state machines for multi-turn dialogue.</p>
+                    </div>
+                    <div class="project_card reveal">
+                        <span class="tech_tag green">LlamaIndex</span>
+                        <h3>NoteBuddy</h3>
+                        <p>Full-stack RAG system with dual-indexing for semantic search and document summarization.</p>
+                    </div>
+                    <div class="project_card reveal">
+                        <span class="tech_tag green">Scikit-learn</span>
+                        <h3>DemandLens</h3>
+                        <p>Stacking Ensemble model achieving 0.98 R2 score for weekly store sales forecasting.</p>
+                    </div>
+                    <div class="project_card reveal">
+                        <span class="tech_tag blue">MySQL</span>
+                        <h3>EventHub</h3>
+                        <p>Booking app with real-time seat validation and atomic database updates.</p>
+                    </div>
+                    <div class="project_card reveal">
+                        <span class="tech_tag blue">Android Studio</span>
+                        <h3>TravelAI</h3>
+                        <p>Native Kotlin app with MVVM architecture, using SQLite for offline persistence and LLMs for trip insights.</p>
+                    </div>
+                    <div class="project_card reveal">
+                        <span class="tech_tag green">FastAPI</span>
+                        <h3>NIVA</h3>
+                        <p>Real-time voice AI featuring a full-duplex STT/TTS pipeline and advanced prompt engineering for multilingual output.</p>
+                    </div>
+                    <div class="project_card reveal">
+                        <div class="tech_tags">
+                            <span class="tech_tag blue">Gemini 3</span>
+                            <span class="tech_tag green">Multi-Agent</span>
+                        </div>
+                        <h3>InsightAI</h3>
+                        <p>An autonomous investigative agent that leverages Tavily API and Gemini 3 Flash to identify information gaps and underreported perspectives across global sources.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h2>Ready to collaborate?</h2>
+            <a href="mailto:abvivek28@gmail.com" class="footer_email">abvivek28@gmail.com</a>
+            <div class="footer_bottom">
+                <p>Bangalore, KA</p>
+            </div>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('active'); }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        document.addEventListener('mousemove', e => {
+            document.body.style.setProperty('--x', e.clientX + 'px');
+            document.body.style.setProperty('--y', e.clientY + 'px');
+        });
+
+        function scrollToContent() {
+            const element = document.getElementById('main-content');
+            const offset = 180; // Offsets the scroll to stop higher up
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = element.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
